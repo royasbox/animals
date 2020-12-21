@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Animals</title>
+    </head>
+
+    <body>
+        <h1>Animals</h1>
+        <h2>Hit Play and count the animal sounds you hear</h2>
+        <p>Hit Reset if you make a mistake.</p>
+
+        <h2>
+            <button id="play" class="controls">Play</button>
+            <button id="reset" class="controls" onClick="window.location.reload();">Reset</button>
+        </h2>
+
+        <section>
+            <button class="card cardshadow" onClick="onClickCat()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/cat.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Cats [<a id="clicksCat">0</a>]</div>
+            </button>
+    
+            <button class="card cardshadow" onClick="onClickDog()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/dog.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Dogs [<a id="clicksDog">0</a>]</div>
+            </button>
+    
+            <button class="card cardshadow" onClick="onClickHorse()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/horse.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Horses [<a id="clicksHorse">0</a>]</div>
+            </button>
+
+            <button class="card cardshadow" onClick="onClickLion()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/lion.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Lions [<a id="clicksLion">0</a>]</div>
+            </button>
+        </section>
+
+        <section>
+            <button class="card cardshadow" onClick="onClickOwl()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/owl.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Owls [<a id="clicksOwl">0</a>]</div>
+            </button>
+    
+            <button class="card cardshadow" onClick="onClickPig()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/pig.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Pigs [<a id="clicksPig">0</a>]</div>
+            </button>
+
+            <button class="card cardshadow"  onClick="onClickChicken()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/chicken.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Chickens [<a id="clicksChicken">0</a>]</div>
+            </button>
+    
+            <button class="card cardshadow"  onClick="onClickCow()">
+                <div class="icon">
+                    <span class="animal">
+                        <img src="image/cow.png" alt="">
+                    </span>
+                </div>
+                <div class="caption">Cows [<a id="clicksCow">0</a>]</div>
+            </button>
+        </section>
+
+        <h2>
+            <p>Click on Result to see if you won!</p>
+            <button id="results" class="controls">Result</button>
+        </h2>
+
+        <h2 id="status">...</h2>
+
+        <div class="attribution">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
